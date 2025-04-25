@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/logo_t.jpg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Booking - Fourth Dimension Photography Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <a href="index.html">
+            <img src="images/logo_horizontal.jpg" alt="Fourth Dimension Photography Studio Logo" class="logo" />
+          </a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="booking-container">
+        <h1>Book Your Session</h1>
+        
+        <form
+          action="https://formspree.io/f/xzzrzpyw"
+          method="POST"
+        >
+          <div class="session-options">
+            <label for="session-type">Choose Your Session Type:</label>
+            <select id="session-type" name="session-type">
+              <option value="portrait">Individual Portrait Session</option>
+              <option value="couple">Couple Session</option>
+              <option value="headshot">Professional Headshot Session</option>
+              <option value="family">Family Session</option>
+            </select>
+          </div>
+
+          <div class="details-section">
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="date">Preferred Session Date:</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+
+            <div id="additional-info" class="additional-info">
+            </div>
+          </div>
+
+          <button type="submit">Submit Booking</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="year"></span> Fourth Dimension Photography Studio. All rights reserved.
+      </p>
+      <p> Designed by Merrila Liu </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
